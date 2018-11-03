@@ -1,0 +1,41 @@
+{
+    "blog_index" : 
+    {
+        "path" : "/blog",
+        "controller" : "Blog/Base"
+    },
+
+    "cms_index": {
+        "path" : "/",
+        "controller" : "Base"
+    },
+
+    "admin_panel": {
+        "path" : "/admin/panel",
+        "controller": "Admin/Admin"
+    },
+
+    "cms_blog" : {
+        "path" : "/blog/blog",
+        "controller" : "Admin/Article:blog"
+    },
+
+    "blog_article" : {
+        "path" : "/blog/{articleId}",
+        "controller" : "Blog/Article:name",
+        "requirements" : ["/\\d+/"]
+    },
+
+    "blog_name" : {
+        "path" : "/blog/{articleName}",
+        "controller": "Blog/Article",
+        "requirements": ["/[a-zA-Z]+/"]
+    },
+
+    "blog_non_so" : {
+        "path" : "/blog/{no}/{so}",
+        "controller" : "Blog/Article:nonso"
+    }
+}
+
+

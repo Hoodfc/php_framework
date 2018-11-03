@@ -1,0 +1,5 @@
+Views Architecture:
+
+  ☐ a VIEW can have multiple inputs (from a {controller}) but must have one and only one output, rapresented by the method {out()}.
+  ☐ the framework gives a Default View which every other View can extends. It should also be useful for example meanings.
+  

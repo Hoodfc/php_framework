@@ -1,0 +1,11 @@
+Routing:
+
+  Nullable:
+    ✔ make possible to declare controller with nullable arguments @done (17-04-16 12:01)
+      ✔ base_idea = set in requirements {"nullable"}. @done (17-04-16 12:01)
+      ✔ obvs after a {"nullable"} every successives arguments must be {"nullable"} due to PHP's rule @done (17-04-16 12:01)
+
+  Annotation:
+    ☐ big project-to be: automatic routing based on istructions declared on top of every action
+    ☐ needed of an {Annotator} class that scans every controller and check when the {request path} match with an action
+    ☐ in prod mode, {Annotator} can be cached writing a route.json file and check only if there had been changin in the {Controller:action}'s hierarchy. In my actual idea, this still require a scan through the hierarchy, but only to check the controllers' Last Modified.
